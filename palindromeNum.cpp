@@ -39,6 +39,7 @@ int main(int argc, char** argv)
 		{
 			cout << rev << "\n";
 			cout << "its a palindrome";	
+			break;
 		}
 		else
 		{
