@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>
+
 using namespace std;
 
 float raizAproximacion(int numeroInicial){
@@ -9,9 +9,14 @@ float raizAproximacion(int numeroInicial){
 	else if (numeroInicial == 0){
 		return 0;
 	}
-	else{
-		return sqrt (numeroInicial) ;
-	}
+	double aprox = numeroInicial / 2.0;
+    double error = 1e-10;
+
+    while (abs(numeroInicial - aprox*aprox) > error) {
+        aprox = (aprox + numeroInicial/aprox) / 2.0;
+    }
+
+    return aprox;
 }
 
 double factorial (int numeroInicial){
