@@ -6,21 +6,25 @@ using namespace std;
 class Clientes
 {
 	public:
-		Clientes();
-		get
-	protected:
-		struct datosCliente
+		// atributos
+		struct Cliente{
 			string nombre;
 			string apellido;
-			int numero;
+			int numero [10];
 			string email;
+		};
 		
-		datosCliente (string nombre, string apellido, int numero, string email){
-			this -> nombre = nombre; 
-			this -> apellido = apellido;
-			this -> numero = numero;
-			this -> email = email;
-		}	
+		// constructor
+		Clientes();
+		
+		// métodos
+		void datosCliente();
+	protected:
+		
+			
+		
+		
+		
 };
 
 #endif
